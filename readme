@@ -17,4 +17,4 @@
 
 
 // CREATE THE REACT APP
-        
+       npx create-react-app appname 
