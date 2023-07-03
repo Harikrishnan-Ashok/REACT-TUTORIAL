@@ -1,3 +1,14 @@
-Tutorial for react 
+                                                    Tutorial for react
+                                        COMPONENTS:
+                                            2 TYPES :   function , classes
+
+                                                eg for function:
+
+                                                    export const header=()=>
+                                                    {
+                                                        return(<div>............</div>)
+                                                    }
 
 
+                                            STATE: 
+                                                ( HOOKS )
