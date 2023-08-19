@@ -1,26 +1,56 @@
 import React from 'react' 
-import styled,{css} from 'styled-components';
+import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import { MenuData } from '../data/MenuData';
-const Nav=styled.nav
-`
-  height: 60px;
-  display:flex;
-  justify-content:space-between;
-  padding:1 rem 2 rem;
-  z-index:100;
-  position:fixed;
-  width:100%;
+const Nav = styled.nav`
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
   background: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 `;
-const Logo = styled(Link)` 
-  color:#fff;
-  font-style:italic;
 
+const Logo = styled(Link)`
+  color: #fff;
+  font-style: italic;
+  font-size: 1.5rem; /* Adjust font size */
+  text-decoration: none;
+
+  &:hover {
+    color: #ff9900; /* Change color on hover */
+  }
 `;
-const Menubars = styled.i``;
-const Navmenu = styled.i``;
-const NavMenuLinks = styled(Link)`:color:#fff;`;
+
+const Menubars = styled.i`
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+`;
+
+const Navmenu = styled.ul`
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+`;
+
+const NavMenuLinks = styled.li`
+  margin: 0 1rem;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #ff9900; /* Change color on hover */
+  }
+`;
 
 
 const Navbar = () => {
@@ -35,7 +65,7 @@ const Navbar = () => {
           </NavMenuLinks>
         ))}
       </Navmenu>
-      <>Navbar</>
+      <h3>Navbar</h3>
     </Nav>
   )
 }
