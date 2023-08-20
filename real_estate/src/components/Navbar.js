@@ -29,6 +29,7 @@ const Logo = styled(Link)`
 
 const Menubars = styled.i`
   font-size: 2rem;
+  display none;
   color: #fff;
   cursor: pointer;
 `;
@@ -53,7 +54,7 @@ const NavMenuLinks = styled.li`
   }
 `;
 const NavBtn = styled.div`
-  display flex;
+  display:flex;
   align-items:center;
   margin-right:24px;
 
@@ -73,7 +74,7 @@ const Navbar = () => {
         ))}
       </Navmenu>
       <NavBtn>
-        <Button to="/contact">contact us</Button>
+        <Button to="/contact" primary = 'true'>Contact us</Button>
       </NavBtn>
     </Nav>
   )
