@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import { MenuData } from '../data/MenuData';
+import { Button } from './Button';
 const Nav = styled.nav`
   height: 80px;
   display: flex;
@@ -11,7 +12,7 @@ const Nav = styled.nav`
   z-index: 100;
   position: fixed;
   width: 100%;
-  background: #000;
+  background: red;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 `;
 
@@ -51,6 +52,12 @@ const NavMenuLinks = styled.li`
     color: #ff9900; /* Change color on hover */
   }
 `;
+const NavBtn = styled.div`
+  display flex;
+  align-items:center;
+  margin-right:24px;
+
+`;
 
 
 const Navbar = () => {
@@ -65,7 +72,9 @@ const Navbar = () => {
           </NavMenuLinks>
         ))}
       </Navmenu>
-      <h3>Navbar</h3>
+      <NavBtn>
+        <Button to="/contact">contact us</Button>
+      </NavBtn>
     </Nav>
   )
 }
