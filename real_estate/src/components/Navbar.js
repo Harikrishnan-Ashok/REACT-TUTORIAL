@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import { MenuData } from '../data/MenuData';
 import { Button } from './Button';
+import {MdOutlineSegment} from 'react-icons/md'
+
 const Nav = styled.nav`
   height: 80px;
   display: flex;
@@ -27,11 +29,13 @@ const Logo = styled(Link)`
   }
 `;
 
-const Menubars = styled.i`
+const Menubars = styled(MdOutlineSegment)`
   font-size: 2rem;
   display none;
-  color: #fff;
+  color: #000;
   cursor: pointer;
+  
+  @media screen and(max-width:768px){display:block;}
 `;
 
 const Navmenu = styled.ul`
@@ -40,6 +44,8 @@ const Navmenu = styled.ul`
   align-items: center;
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width:768px){display:none;}
 `;
 
 const NavMenuLinks = styled.li`
@@ -57,6 +63,8 @@ const NavBtn = styled.div`
   display:flex;
   align-items:center;
   margin-right:24px;
+
+  @media screen and (max-width:768px){display:none;}
 
 `;
 
