@@ -31,13 +31,13 @@ const Logo = styled(Link)`
 
 const Menubars = styled(MdOutlineSegment)`
   font-size: 2rem;
-  display none;
   color: #000;
   cursor: pointer;
-  
-  @media screen and(max-width:768px){display:block;}
-`;
 
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
 const Navmenu = styled.ul`
   list-style: none;
   display: flex;
@@ -46,6 +46,7 @@ const Navmenu = styled.ul`
   padding: 0;
 
   @media screen and (max-width:768px){display:none;}
+  transfrom :tranlate(-50%, 25%);
 `;
 
 const NavMenuLinks = styled.li`
